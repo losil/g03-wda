@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="475.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.hslu.swde.wda.ui.controller.A08ViewController">
+   <children>
+      <Button fx:id="btn_abfrage" layoutX="774.0" layoutY="84.0" mnemonicParsing="false" onAction="#abfrageWetterdaten" text="Abfrage" />
+      <Label fx:id="lbl_zeitperiode" layoutX="21.0" layoutY="88.0" text="Zeitperiode (dd.mm.yyyy)" />
+      <MenuButton fx:id="mbtn_ortschaften" layoutX="21.0" layoutY="49.0" mnemonicParsing="false" text="Ortschaften">
+         <items>
+            <CheckMenuItem mnemonicParsing="false" text="Unspecified Action" />
+         </items>
+      </MenuButton>
+      <DatePicker fx:id="date_start" layoutX="172.0" layoutY="84.0" />
+      <DatePicker fx:id="date_end" layoutX="365.0" layoutY="84.0" />
+      <Label fx:id="lbl_a11" layoutX="21.0" layoutY="14.0" text="A08 - durchschnittliche Luftfeuchtigkeit">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_startdate" layoutX="297.0" layoutY="109.0" text="Startdatum">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_enddate" layoutX="494.0" layoutY="109.0" text="Enddatum">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbl_content" layoutX="34.0" layoutY="148.0" prefHeight="310.0" prefWidth="900.0">
+         <columns>
+            <TableColumn fx:id="clm_ortschaft" prefWidth="124.66668701171875" text="Ortschaft" />
+            <TableColumn fx:id="clm_luftfeuchtigkeit" prefWidth="210.0" text="durschnittliche Luftfeuchtigkeit" />
+         </columns>
+      </TableView>
+      <Label fx:id="lbl_nichtkomplett" layoutX="172.0" layoutY="52.0" text="Bitte Datum eintragen!" textFill="RED" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_status" layoutX="776.0" layoutY="53.0" prefHeight="17.0" prefWidth="161.0" />
+      <Button fx:id="btn_export" layoutX="845.0" layoutY="84.0" mnemonicParsing="false" onAction="#onExport" text="Export als CSV" />
+   </children>
+</AnchorPane>

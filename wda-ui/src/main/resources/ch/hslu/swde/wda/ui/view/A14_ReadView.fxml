@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="475.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.hslu.swde.wda.ui.controller.A14_ReadViewController">
+   <children>
+      <Label fx:id="lbl_a01" layoutX="21.0" layoutY="14.0" text="A14 - Kunden anzeigen">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbl_content" layoutX="21.0" layoutY="50.0" prefHeight="408.0" prefWidth="913.0">
+         <columns>
+            <TableColumn fx:id="clm_id" prefWidth="52.66668701171875" text="ID" />
+            <TableColumn fx:id="clm_firmenname" prefWidth="114.00003051757812" text="Firmenname" />
+            <TableColumn fx:id="clm_strasse" prefWidth="116.666748046875" text="Strasse" />
+            <TableColumn fx:id="clm_nummer" prefWidth="36.6666259765625" text="Nr." />
+            <TableColumn fx:id="clm_plz" prefWidth="61.33331298828125" text="PLZ" />
+            <TableColumn fx:id="clm_ort" prefWidth="103.99993896484375" text="Ort" />
+            <TableColumn fx:id="clm_ansprechpartner" prefWidth="177.33331298828125" text="Ansprechpartner" />
+            <TableColumn fx:id="clm_telefon" prefWidth="118.6666259765625" text="Telefon" />
+            <TableColumn fx:id="clm_lizenz" prefWidth="127.3333740234375" text="Lizenzart" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

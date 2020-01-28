@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="25.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.hslu.swde.wda.ui.controller.MenuBarController">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="25.0" prefWidth="950.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Abfragen">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#loadA01" text="A01" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadA02" text="A02" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadA03" text="A03 / A10 / A11 / A12" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadA04" text="A04" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadA05" text="A05" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadA06" text="A06" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadA07" text="A07" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadA08" text="A08" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadA09" text="A09" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Verwaltung">
+               <items>
+                  <Menu mnemonicParsing="false" text="A13 - Benutzer CRUD">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#loadA13Create" text="Create" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadA13Read" text="Read" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadA13Update" text="Update" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadA13Delete" text="Delete" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="A14 - Kunden CRUD">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#loadA14Create" text="Create" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadA14Read" text="Read" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadA14Update" text="Update" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadA14Delete" text="Delete" />
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

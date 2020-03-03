@@ -110,7 +110,7 @@
         <versionsPlugin.version>2.7</versionsPlugin.version>
 
         <asciidoctorj.pdf.version>1.5.0-rc.3</asciidoctorj.pdf.version>
-        <asciidoctorj.version>1.6.2</asciidoctorj.version>
+        <asciidoctorj.version>2.2.0</asciidoctorj.version>
 
         <log4j2.version>2.13.0</log4j2.version>
     </properties>
